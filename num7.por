@@ -9,14 +9,14 @@ programa
 {	
 	funcao inicio()
 	{
-		const inteiro VALOR_INICIAL = 2
+		const inteiro VALOR_INICIAL = 1
 		
 		inteiro qtdNumerosPrimos
 
 		escreva("Digite quantos números primos serão impressos: ")
 		leia(qtdNumerosPrimos)
 		
-		inteiro proximoDaSequencia = VALOR_INICIAL //verifica números de 2 até qtdNumerosPrimos
+		inteiro proximoDaSequencia = VALOR_INICIAL //verifica números de 1 até qtdNumerosPrimos
 		inteiro contador = 0 // conta quantos números primos já foram impressos
 		
 		enquanto(contador < qtdNumerosPrimos)
@@ -48,7 +48,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 221; 
+ * @POSICAO-CURSOR = 511; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
