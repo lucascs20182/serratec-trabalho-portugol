@@ -50,6 +50,26 @@ programa
 		// dos valores das linhas e colunas da matriz
 		escreva("\n")
 
+		escreva("Modelo da matriz:\nA = ")
+		para(inteiro i = 0; i < m; i++)
+		{
+			escreva("[")
+			para(inteiro j = 0; j < n; j++)
+			{
+				se(j == 0)
+				{
+					escreva("A", i+1, j+1)
+				}
+				senao
+				{
+					escreva("   A", i+1, j+1)
+				}
+			}
+			escreva("]\n    ")
+		}
+
+		escreva("\n")
+
 		// preenche as linhas e colunas da matriz A
 		para(inteiro i = 0; i < m; i++)
 		{
@@ -82,12 +102,13 @@ programa
 			}
 		}
 		
+		escreva("\n")
 		imprimirMatrizes(matrizA, "A", m, n)
+		
 		escreva("\n")
-
 		imprimirMatrizes(matrizB, "B", m, n)
+		
 		escreva("\n")
-
 		imprimirMatrizes(matrizS, "S", m, n)
 	}
 
@@ -118,7 +139,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2678; 
+ * @POSICAO-CURSOR = 2986; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
