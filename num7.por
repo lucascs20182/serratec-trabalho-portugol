@@ -1,5 +1,12 @@
+/*
+ * 7. Elabora um programa que solicita ao usuário a quantidade de 
+ * números primos que ele quer que seja impresso. Após imprima na 
+ * tela a quantidade de números primos escolhida. Ex. Entrada 4
+ * Saída 1 2 3 5
+ */
+
 programa
-{	
+{	
 	funcao inicio()
 	{
 		const inteiro VALOR_INICIAL = 2
@@ -41,7 +48,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 740; 
+ * @POSICAO-CURSOR = 221; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
