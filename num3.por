@@ -60,6 +60,8 @@ programa
 			saida += "P2= " + notas[i][1] + ", "
 			saida += "Media=" + notas[i][2] + ", "
 			saida += nomeSituacao[i][1] + "!\n"
+
+			escreva(saida)
 		}
 	}
 }
@@ -69,9 +71,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 400; 
+ * @POSICAO-CURSOR = 398; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
+ * @SIMBOLOS-INSPECIONADOS = {i, 25, 15, 1}-{j, 30, 16, 1}-{i, 54, 15, 1};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
