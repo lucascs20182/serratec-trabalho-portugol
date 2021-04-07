@@ -10,8 +10,8 @@ programa
 	funcao inicio()
 	{
 		// soma no máximo matrizes A5x5
-		const inteiro VALOR_DE_M_MAXIMO = 5
-		const inteiro VALOR_DE_N_MAXIMO = 5
+		const inteiro VALOR_DE_M_MAXIMO = 10
+		const inteiro VALOR_DE_N_MAXIMO = 10
 
 		/* 
 		 *  em portugol os vetores/matrizes só podem ser criadas
@@ -83,7 +83,7 @@ programa
 		// separa obtenção de dados da matrizA da matrizB
 		escreva("\n")
 
-		// preenche as linhas e colunas da matriz A
+		// preenche as linhas e colunas da matriz B
 		para(inteiro i = 0; i < m; i++)
 		{
 			para(inteiro j = 0; j < n; j++)
@@ -139,7 +139,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2986; 
+ * @POSICAO-CURSOR = 343; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
