@@ -26,13 +26,14 @@ programa
 				+ " da sequência de fibonacci são: \n")
 
 			// segundo a definição formal matemática
-			// os valores inciais f[0] e f[1] são iguais a 1
+			// o primeiro e o segundo número da sequência são iguais a 1
 			escreva(1 + " ")
 
 			// remove 1 da quantidade de termos a serem imprimidos
 			// para corrigir o 1 printado acima
 			qtdNumerosFibonacci -= 1
 
+			// imprime os próximos termos da sequência
 			para(inteiro i = 1; i <= qtdNumerosFibonacci; i++)
 			{
 				escreva(calculeFibonacci(i) + " ")
@@ -87,7 +88,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1945; 
+ * @POSICAO-CURSOR = 1997; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
