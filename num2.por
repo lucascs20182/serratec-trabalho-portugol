@@ -9,7 +9,9 @@
  */
 
 programa
-{	
+{
+	inclua biblioteca Matematica --> mat
+
 	funcao inicio()
 	{
 		real valor1, valor2
@@ -17,6 +19,8 @@ programa
 
 		faca
 		{
+			limpa()
+			
 			escreva("Menu\n1.Soma\n2.Subtração\n3.Divisão\n4.Multiplicação\n"
 				+ "Opção: ")
 			leia(opcao)
@@ -72,27 +76,28 @@ programa
 		
 		se(opcao == 1)
 		{
-			resultado = valor1 + valor2
+			resultado = mat.arredondar(valor1 + valor2, 2)
 			
 			retorne "O resultado de " + valor1 + " + " + valor2 + " é: "
 				+ resultado
 		}
 		senao se(opcao == 2)
 		{
-			resultado = valor1 - valor2
+			resultado = mat.arredondar(valor1 - valor2, 2)
 			
 			retorne "O resultado de " + valor1 + " - " + valor2 + " é: "
 				+ resultado
 		}
 		senao se(opcao == 3)
 		{
-			resultado = valor1 / valor2
+			resultado = mat.arredondar(valor1 / valor2, 2)
 			
 			retorne "O resultado de " + valor1 + " / " + valor2 + " é: "
 				+ resultado
 		}
-		senao {
-			resultado = valor1 * valor2
+		senao 
+		{
+			resultado = mat.arredondar(valor1 * valor2, 2)
 			
 			retorne "O resultado de " + valor1 + " * " + valor2 + " é: "
 				+ resultado
@@ -106,7 +111,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 183; 
+ * @POSICAO-CURSOR = 1296; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
