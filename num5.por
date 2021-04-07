@@ -5,14 +5,13 @@
  */
 
 programa
-{	
+{	
 	funcao inicio()
 	{
 		const inteiro QTD_NUMEROS = 10
 	
 		real numeros[QTD_NUMEROS]
-		real menor
-		real maior = 0.0
+		real menor, maior
 		real media = 0.0
 	
 		para(inteiro i = 0; i < QTD_NUMEROS; i++)
@@ -22,6 +21,7 @@ programa
 		}
 
 		menor = numeros[0]
+		maior = numeros[0]
 
 		para(inteiro i = 0; i < QTD_NUMEROS; i++)
 		{
@@ -51,7 +51,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 638; 
+ * @POSICAO-CURSOR = 213; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
