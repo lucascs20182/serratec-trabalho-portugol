@@ -10,6 +10,7 @@
 programa
 {
 	inclua biblioteca Texto --> txt
+	inclua biblioteca Matematica --> mat
 	
 	funcao inicio()
 	{
@@ -18,6 +19,8 @@ programa
 
 		faca
 		{
+			limpa()
+			
 			escreva("Digite o 1º valor: ")
 			leia(valor1)
 			escreva("Digite o 2º valor: ")
@@ -37,13 +40,12 @@ programa
 			leia(continuar)
 
 			continuar = txt.caixa_alta(continuar)
-			
 		} enquanto(continuar == "S")
 	}
 
 	funcao real divida(real valor1, real valor2)
 	{
-		retorne valor1 / valor2
+		retorne mat.arredondar(valor1 / valor2, 2)
 	}
 }
 
@@ -52,7 +54,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 598; 
+ * @POSICAO-CURSOR = 1223; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
