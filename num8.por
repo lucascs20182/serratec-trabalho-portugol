@@ -29,12 +29,12 @@ programa
 		se(opcao == 1)
 		{
 			escreva("Números ordenados em ordem crescente: "
-				+ ordeneCrescente(numeros))
+				+ ordene_numeros("crescente", numeros))
 		}
 		senao se(opcao == 2)
 		{
 			escreva("Números ordenados em ordem decrescente: "
-				+ ordeneDecrescente(numeros))
+				+ ordene_numeros("decrescente", numeros))
 		}
 		senao
 		{
@@ -47,54 +47,44 @@ programa
 
 
 
-	funcao cadeia ordeneCrescente(inteiro numeros[])
+	funcao cadeia ordene_numeros(cadeia crescente_ou_decrescente, inteiro numeros[])
 	{
 		inteiro auxiliar
-		cadeia numerosEmOrdemCrescente = ""
+		cadeia numerosOrdenados = ""
 		
 		para(inteiro i = 0; i < TAMANHO_VETOR; i++)
 		{
 		    para(inteiro j = i + 1; j < TAMANHO_VETOR; j++)
 		    {
-		        se(numeros[i] > numeros[j])
-		        {
-		            auxiliar = numeros[i]
-		            numeros[i] = numeros[j]
-		            numeros[j] = auxiliar
-		        }
+		    		se(crescente_ou_decrescente == "crescente")
+		    		{
+					se(numeros[i] > numeros[j])
+					{
+						auxiliar = numeros[i]
+						numeros[i] = numeros[j]
+						numeros[j] = auxiliar
+					}
+		    		}
+		    		
+		    		se(crescente_ou_decrescente == "decrescente")
+		    		{
+		    			se(numeros[i] < numeros[j])
+					{
+						auxiliar = numeros[i]
+						numeros[i] = numeros[j]
+						numeros[j] = auxiliar
+					}
+		    		}
+		        
 		    }
 		}
 		
 		para (inteiro i = 0; i < TAMANHO_VETOR; i++)
 		{
-			numerosEmOrdemCrescente += numeros[i] + " "
+			numerosOrdenados += numeros[i] + " "
 		}
 
-		retorne numerosEmOrdemCrescente
-	}
-
-
-
-	funcao cadeia ordeneDecrescente(inteiro numeros[])
-	{
-		inteiro temp
-		cadeia numerosEmOrdemDecrescente = ""
-		
-		para(inteiro i = 0; i < TAMANHO_VETOR; i++) {
-			para(inteiro j = 0; j < i; j++) {
-				se(numeros[i] > numeros[j]) {
-					temp = numeros[i]
-					numeros[i] = numeros[j]
-					numeros[j] = temp
-				}
-			}
-		}
-
-		para(inteiro i = 0; i < TAMANHO_VETOR; i++) {
-			numerosEmOrdemDecrescente += numeros[i] + " "
-		}
-
-		retorne numerosEmOrdemDecrescente
+		retorne numerosOrdenados
 	}
 }
 
@@ -103,7 +93,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 414; 
+ * @POSICAO-CURSOR = 1923; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
