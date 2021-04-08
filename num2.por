@@ -10,8 +10,6 @@
 
 programa
 {
-	inclua biblioteca Matematica --> mat
-
 	funcao inicio()
 	{
 		real valor1, valor2
@@ -22,10 +20,10 @@ programa
 			limpa()
 			
 			escreva("Menu\n1.Soma\n2.Subtração\n3.Divisão\n4.Multiplicação\n"
-				+ "Opção: ")
+				+ "\nDigite o número correspondente à operação: ")
 			leia(opcao)
 
-			enquanto(opcao > 4)
+			enquanto(opcao <= 0 ou opcao > 4)
 			{
 				escreva("\nOpção inválida. Tente novamente:\n")
 				
@@ -53,15 +51,15 @@ programa
 			escreva(calcule(opcao, valor1, valor2))
 			
 			escreva("\n\nDeseja fazer um novo cálculo?\n1.Sim\n"
-				+ "2.Não, encerre o programa.\nOpção: ")
+				+ "2.Não, encerre o programa.\nDigite 1 para SIM ou 2 para NÃO: ")
 			leia(continuar)
 
-			enquanto(continuar > 2)
+			enquanto(continuar <= 0 ou continuar > 2)
 			{
 				escreva("\nOpção inválida. Tente novamente:\n")
 				
 				escreva("Deseja fazer um novo cálculo?\n1.Sim\n"
-				+ "2.Não, encerre o programa.\nOpção: ")
+				+ "2.Não, encerre o programa.\nDigite 1 para SIM ou 2 para NÃO: ")
 				leia(continuar)
 			}
 
@@ -76,28 +74,28 @@ programa
 		
 		se(opcao == 1)
 		{
-			resultado = mat.arredondar(valor1 + valor2, 2)
+			resultado = valor1 + valor2
 			
 			retorne "O resultado de " + valor1 + " + " + valor2 + " é: "
 				+ resultado
 		}
 		senao se(opcao == 2)
 		{
-			resultado = mat.arredondar(valor1 - valor2, 2)
+			resultado = valor1 - valor2
 			
 			retorne "O resultado de " + valor1 + " - " + valor2 + " é: "
 				+ resultado
 		}
 		senao se(opcao == 3)
 		{
-			resultado = mat.arredondar(valor1 / valor2, 2)
+			resultado = valor1 / valor2
 			
 			retorne "O resultado de " + valor1 + " / " + valor2 + " é: "
 				+ resultado
 		}
 		senao 
 		{
-			resultado = mat.arredondar(valor1 * valor2, 2)
+			resultado = valor1 * valor2
 			
 			retorne "O resultado de " + valor1 + " * " + valor2 + " é: "
 				+ resultado
@@ -111,7 +109,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1296; 
+ * @POSICAO-CURSOR = 1467; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
