@@ -20,7 +20,8 @@ programa
 		}
 
 		escreva("\nDe que forma você deseja que os números sejam impressos?\n")
-		escreva("1.Crescente\n2.Decrescente\nOpção: ")
+		escreva("1.Crescente\n2.Decrescente\nDigite 1 para Crescente ou 2 "
+			+ "para Decrescente: ")
 		leia(opcao)
 
 		// adiciona uma linha em branco acima do resultado
@@ -93,7 +94,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1923; 
+ * @POSICAO-CURSOR = 636; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
