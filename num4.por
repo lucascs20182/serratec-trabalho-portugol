@@ -13,14 +13,23 @@ programa
 	{
 		inteiro opcao, qtdNumerosFibonacci, numero
 		
-		escreva("Menu\n1.Fibonacci\n2.Fatorial\nOpção: ")
+		escreva("Menu\n1.Fibonacci\n2.Fatorial\nDigite o número"
+			+ " correspondente à sequência desejada: ")
 		leia(opcao)
 
 		se(opcao == 1)
 		{
-			escreva("\nQuantos termos da sequência de fibonacci você quer imprimir: "
+			escreva("\nQuantos termos da sequência de fibonacci você quer imprimir?"
 				+ "\nResposta: ")
 			leia(qtdNumerosFibonacci)
+
+			enquanto(qtdNumerosFibonacci <= 0)
+			{
+				escreva("\nEscolha um número maior do que zero.\n")
+				escreva("\nQuantos termos da sequência de fibonacci você quer imprimir?"
+				+ "\nResposta: ")
+				leia(qtdNumerosFibonacci)
+			}
 
 			escreva("\nOs " + qtdNumerosFibonacci + " primeiros números"
 				+ " da sequência de fibonacci são: \n")
@@ -88,7 +97,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1997; 
+ * @POSICAO-CURSOR = 611; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
