@@ -10,7 +10,7 @@
 programa
 {
 	inclua biblioteca Texto --> txt
-	inclua biblioteca Matematica --> mat
+	//inclua biblioteca Matematica --> mat
 	
 	funcao inicio()
 	{
@@ -45,7 +45,8 @@ programa
 
 	funcao real divida(real valor1, real valor2)
 	{
-		retorne mat.arredondar(valor1 / valor2, 2)
+		// retorne mat.arredondar(valor1 / valor2, 2)
+		retorne valor1 / valor2
 	}
 }
 
@@ -54,7 +55,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1223; 
+ * @POSICAO-CURSOR = 471; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
